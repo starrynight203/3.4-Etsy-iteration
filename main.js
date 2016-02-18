@@ -41,8 +41,13 @@ var singleItem = items.filter(function(item){
 });
 console.log(singleItem[0].title + 'costs £' + singleItem[0].price);
 
+// NUMBER FOUR
 
-
+items.forEach(function(item){
+  if (item.materials.indexOf('wood') >= 0){
+    console.log(item.title + ' is made of wood.');
+  }
+})
 
 
 

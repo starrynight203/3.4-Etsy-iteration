@@ -49,12 +49,30 @@ items.forEach(function(item){
   }
 })
 
+// NUMBER FIVE
+// gives you all the items that meeet the criteria
+items.filter(function(item){
+// finding items that have 8 or more materials
+  if (item.materials.length >= 8){
+    // for items that have 8 or more materials you are console logging the title & length
+    console.log(item.title + ' has '+ item.materials.length + ' materials:');
+    // for each item in the materials array you console logging
+    item.materials.forEach(function(i){
+    console.log(i);
+    })
+  }
+});
 
 
 
 
 
+//write a function in a function
+//look for .length
 
+// \n starts a new line
 
+// NUMBER SIX
+// maybe use a filter
 
 })();

@@ -20,7 +20,7 @@
   console.log("The average price is $" + average.toFixed(2));
 
 // QUESTION TWO
-//
+// use .filter to find items with price between 14 & 18
 var cheapItems = items.filter(function(item){
   if (item.price > 14.00 && item.price < 18.00 ){
     return true;
@@ -30,6 +30,16 @@ var cheapItems = items.filter(function(item){
 });
 console.log("Items that cost between $14.00 USD and $18.00 USD:");
 console.log(cheapItems);
+
+// QUESTION THREE
+var singleItem = items.filter(function(item){
+  if (item.currency_code == 'GBP'){
+    return true;
+  } else {
+    return false;
+  }
+});
+console.log(singleItem[0].title + 'costs £' + singleItem[0].price);
 
 
 

@@ -47,10 +47,10 @@ items.forEach(function(item){
   if (item.materials.indexOf('wood') >= 0){
     console.log(item.title + ' is made of wood.');
   }
-})
+});
 
 // NUMBER FIVE
-// gives you all the items that meeet the criteria
+// gives you all the items that meet the criteria
 items.filter(function(item){
 // finding items that have 8 or more materials
   if (item.materials.length >= 8){
@@ -64,15 +64,22 @@ items.filter(function(item){
 });
 
 
-
-
-
-//write a function in a function
-//look for .length
-
 // \n starts a new line
 
 // NUMBER SIX
 // maybe use a filter
+ var handMadeItems = items.filter(function(item){
+  if (item.who_made == 'i_did'){
+    return true;
+  } else {
+    return false;
+  }
+});
+console.log(handMadeItems.length + ' were made by their sellers');
+
+
+
+
+
 
 })();
